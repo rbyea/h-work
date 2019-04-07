@@ -1,0 +1,56 @@
+.header
+	padding-top: 20px
+	&-block
+		display: grid
+		grid-area: header
+		grid-template-areas: ". header ."
+		justify-content: space-around
+		&__logo
+			color: #ffffff
+			display: grid
+			grid-template-columns: 10px 95px 0px
+			align-items: center
+			font-weight: 400
+			&_text
+				justify-self: end
+		&__menu
+			cursor: pointer
+			width: 25px
+			height: 25px
+			span
+				width: 15px
+				height: 1px
+				top: 32px
+				background-color: #ffffff
+				position: absolute
+				&:before
+					content: ''
+					right: -2px
+					height: 1px
+					width: 19px
+					background-color: #ffffff
+					position: absolute
+					top: -8px
+				&:after
+					content: ''
+					top: 19px
+					height: 1px
+					width: 19px
+					background-color: #ffffff
+					position: absolute
+					top: 8px
+					left: -2px
+
+.btn-header
+	width: 90px
+	height: 31px
+	background-color: #0f33ff
+	border: none
+	color: #ffffff
+	cursor: pointer
+	font-weight: 700
+	&:focus
+		outline: none
+
+
+

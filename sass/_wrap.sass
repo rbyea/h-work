@@ -1,0 +1,54 @@
+.main
+	&-content
+		position: relative
+		display: grid
+		grid-template-areas: "main main main" ". description ."
+		padding-top: 120px
+		&:before
+			position: absolute
+			width: 64%
+			left: 22%
+			content: ''
+			bottom: 21.5%
+			height: 2px
+			background-color: #ffffff
+			opacity: 0.05
+		&:after
+			position: absolute
+			content: ''
+			width: 30px
+			left: 25%
+			bottom: 20.5%
+			height: 6px
+			background-color: #0f33ff
+		&__global
+			display: grid
+			grid-area: main
+			color: #ffffff
+			grid-template-columns: 1fr 1fr 0fr
+			align-items: center
+			&_wrap
+				font-size: 82px
+				font-weight: 900
+				line-height: 72px
+				letter-spacing: 2.05px
+				width: 444px
+				justify-self: end
+			&_image
+				img
+					max-width: 100%
+		&__description
+			display: grid
+			grid-area: description
+			grid-template-columns: repeat(3, 1fr)
+			margin-top: 29px
+			&_text
+				opacity: 0.1
+				transition: all .5s ease-in-out
+				cursor: pointer
+				width: 240px
+				align-self: start
+				&:hover
+					opacity: 1.1
+
+

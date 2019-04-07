@@ -1,0 +1,54 @@
+.nav
+	position: absolute
+	&-list
+		color: #ffffff
+		list-style: none
+		position: relative
+		padding: 20px
+		margin-left: 55px
+		&:before
+			content: ''
+			position: absolute
+			top: 58%
+			left: 0
+			-webkit-transform: translateY(-50%)
+			transform: translateY(-50%)
+			width: 2px
+			height: 110%
+			max-height: 750px
+			background-color: #555
+			opacity: .35
+			z-index: 1
+		li
+			font-size: 14px
+			font-weight: 300
+			line-height: 72px
+			padding-bottom: 117px
+			height: 0px
+			&:nth-child(1)
+				&:before
+					content: '01'
+					position: absolute
+					left: -26px
+			&:nth-child(2)
+				&:before
+					content: '02'
+					position: absolute
+					left: -26px
+			&:nth-child(3)
+				&:before
+					content: '03'
+					position: absolute
+					left: -26px
+			&:nth-child(4)
+				&:before
+					content: '04'
+					position: absolute
+					left: -26px
+			&:nth-child(5)
+				padding-bottom: 0
+				&:before
+					content: '05'
+					position: absolute
+					left: -26px
+				

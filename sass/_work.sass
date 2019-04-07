@@ -1,0 +1,111 @@
+.work
+  position: relative
+  padding-top: 10%
+  width: 960px
+  max-width: 80%
+  height: 100%
+  justify-content: center
+  margin: 0 auto
+
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+
+  &-lockup
+    position: relative
+    grid-area: slider
+    grid-template-areas: "slider slider slider"
+
+    .slider
+      position: relative
+      width: 80%
+      margin: 0 auto
+      padding: 0
+      list-style: none
+
+      &-item
+        position: absolute
+        display: none
+        text-align: center
+
+        a
+          text-decoration: none
+          color: #858585
+
+        &__title
+          margin-top: 10px
+          font-size: 12px
+          font-weight: 700
+          text-transform: uppercase
+
+        &__description
+          display: none
+          max-width: 250px
+          margin: 0 auto
+
+        &__image
+          width: 150px
+          height: 150px
+          margin: 0 auto
+          border-radius: 50%
+          overflow: hidden
+
+          img
+            width: 100%
+
+        &__left
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          display: block
+
+        &__right
+          top: 50%
+          right: 0
+          transform: translateY(-50%)
+          display: block
+
+        &__center
+          position: relative
+          top: 30px
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+
+          a
+            color: #ffffff
+
+          .slider-item__title
+            margin-top: 25px
+            font-size: 16px
+
+          .slider-item__description
+            display: block
+
+          .slider-item__image
+            width: 300px
+            height: 300px
+
+    .slider-next,
+    .slider-prev
+      position: absolute
+      top: 160px
+      display: flex
+      width: 50px
+      height: 50px
+      background-color: #282828
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      cursor: pointer
+
+      svg
+        width: 20px
+        fill: #ffffff
+
+    .slider-next
+      right: 0
+
+    .prev
+      left: 0
